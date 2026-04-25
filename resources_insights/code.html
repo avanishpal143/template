@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GlobalConnect Resources Hub</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#316bf3",
+                        "surface-bright": "#f9f9ff",
+                        "primary": "#5e0010",
+                        "surface-container-low": "#f1f3ff",
+                        "on-primary-fixed": "#410008",
+                        "on-background": "#141b2b",
+                        "inverse-surface": "#293040",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#ff8c8c",
+                        "background": "#f9f9ff",
+                        "on-tertiary-fixed-variant": "#5a00c6",
+                        "on-primary-fixed-variant": "#900920",
+                        "surface-container-high": "#e1e8fd",
+                        "primary-fixed": "#ffdad8",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed-dim": "#ffb3b1",
+                        "error": "#ba1a1a",
+                        "outline": "#8d706f",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#003ea8",
+                        "secondary-fixed-dim": "#b4c5ff",
+                        "surface-variant": "#dce2f7",
+                        "surface-container-highest": "#dce2f7",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#edf0ff",
+                        "on-secondary-fixed": "#00174b",
+                        "surface": "#f9f9ff",
+                        "primary-container": "#88001b",
+                        "surface-tint": "#b22834",
+                        "tertiary-fixed": "#eaddff",
+                        "tertiary": "#380081",
+                        "outline-variant": "#e1bebd",
+                        "secondary": "#0051d5",
+                        "tertiary-container": "#5300b8",
+                        "inverse-primary": "#ffb3b1",
+                        "on-secondary-container": "#fefcff",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#d2bbff",
+                        "surface-container": "#e9edff",
+                        "surface-dim": "#d3daef",
+                        "secondary-fixed": "#dbe1ff",
+                        "on-tertiary-fixed": "#25005a",
+                        "on-tertiary-container": "#bd9cff",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#141b2b",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#594140"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "0.5rem",
+                        "gutter": "1.5rem",
+                        "section-padding": "5rem",
+                        "container-max": "1280px",
+                        "stack-md": "1.5rem",
+                        "stack-lg": "3rem"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Manrope"],
+                        "label-sm": ["Inter"],
+                        "headline-md": ["Manrope"],
+                        "display-xl": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "700" }],
+                        "label-sm": ["14px", { "lineHeight": "1", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "700" }],
+                        "display-xl": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Soft ambient shadow for elevation level 1 */
+        .ambient-shadow {
+            box-shadow: 0px 4px 20px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md">
+<!-- TopNavBar -->
+<nav class="bg-white/90 dark:bg-slate-900/90 backdrop-blur-md fixed top-0 w-full z-50 border-b border-slate-200/60 dark:border-slate-800/60 shadow-sm">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Brand -->
+<a class="text-2xl font-extrabold text-[#88001B] dark:text-white tracking-tighter" href="#">GlobalConnect</a>
+<!-- Navigation Links (Web) -->
+<div class="hidden md:flex space-x-8">
+<a class="text-slate-600 dark:text-slate-300 hover:text-[#88001B] transition-colors font-manrope font-semibold text-sm tracking-tight hover:bg-slate-50 dark:hover:bg-slate-800/50 rounded-lg transition-all duration-300 px-3 py-2" href="#">Solutions</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-[#88001B] transition-colors font-manrope font-semibold text-sm tracking-tight hover:bg-slate-50 dark:hover:bg-slate-800/50 rounded-lg transition-all duration-300 px-3 py-2" href="#">Pricing</a>
+<!-- Active Navigation Item -->
+<a class="text-[#88001B] dark:text-red-400 border-b-2 border-[#88001B] pb-1 font-manrope font-semibold text-sm tracking-tight px-3 py-2 scale-95 transition-transform ease-out" href="#">Resources</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-[#88001B] transition-colors font-manrope font-semibold text-sm tracking-tight hover:bg-slate-50 dark:hover:bg-slate-800/50 rounded-lg transition-all duration-300 px-3 py-2" href="#">Company</a>
+</div>
+<!-- Trailing Actions -->
+<div class="flex items-center space-x-4">
+<button class="hidden md:block font-manrope font-semibold text-sm tracking-tight text-[#88001B] dark:text-red-400 px-4 py-2 hover:bg-slate-50 rounded-lg transition-colors">Log In</button>
+<button class="bg-[#88001B] text-white font-manrope font-semibold text-sm tracking-tight px-5 py-2.5 rounded-full hover:bg-[#5e0010] transition-colors shadow-sm flex items-center space-x-2">
+<span>Get a Quote</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[100px] pb-section-padding">
+<!-- Featured Insights (Hero section substituting carousel for static page) -->
+<section class="max-w-7xl mx-auto px-6 mb-16">
+<div class="mb-stack-md flex justify-between items-end">
+<div>
+<h1 class="font-display-xl text-display-xl text-primary-container mb-2">Featured Insights</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Expert perspectives on enterprise communication and infrastructure.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Main Featured Article -->
+<div class="lg:col-span-8 group cursor-pointer relative overflow-hidden rounded-xl bg-surface-container-lowest ambient-shadow flex flex-col justify-end min-h-[400px]">
+<img alt="" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="abstract architectural glass data center glowing with soft blue and deep red lights symbolizing global connectivity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3ICNMK53icXtGK1QZN235nMbt8NGfjy-b4QuE-h0JlD2G_XjdVqOBy4Qs1CHo80L3_rLfvGB8o1W7zGWJi9SqEdEoXQSWSjk-Uio9XGwXRNH6TxEh1qPTv6sU63Nv0rgUNSyZK2UGtnFoZWZE3eGArP7lnvvnIcKUB7hMYIgBfBZvRi_OCY3WG8Pcafnq90dlCo5JMpE2YsfdFfMrJ6H2BG5ujNlQTRIeHJtx0K8AUFDVzRLPUyHBOmiD6Mjkqvvx1e45qF46Djvz"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background via-on-background/60 to-transparent opacity-90"></div>
+<div class="relative z-10 p-8 flex flex-col h-full justify-end">
+<span class="inline-flex w-fit items-center px-3 py-1 rounded-full bg-secondary-container/90 text-on-secondary font-label-sm text-label-sm mb-4 backdrop-blur-sm">
+                            Strategy
+                        </span>
+<h2 class="font-headline-lg text-headline-lg text-surface-bright mb-3 group-hover:text-primary-fixed-dim transition-colors">Architecting for Resilience: The 2024 Global Infrastructure Report</h2>
+<p class="font-body-md text-body-md text-surface-variant max-w-2xl">Discover how top enterprises are rethinking their communication backbones to guarantee 99.999% uptime in an increasingly volatile global landscape.</p>
+</div>
+</div>
+<!-- Secondary Featured -->
+<div class="lg:col-span-4 flex flex-col gap-gutter">
+<div class="flex-1 bg-surface-container-lowest rounded-xl ambient-shadow p-6 flex flex-col justify-between group cursor-pointer border border-transparent hover:border-primary-container/20 transition-all">
+<div>
+<span class="inline-flex items-center px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm mb-3">Case Study</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2 group-hover:text-primary-container transition-colors">FinTech Corp reduces latency by 40%</h3>
+</div>
+<div class="flex items-center text-primary-container font-label-sm text-label-sm mt-4">
+                            Read the case study <span class="material-symbols-outlined text-[18px] ml-1">arrow_forward</span>
+</div>
+</div>
+<div class="flex-1 bg-surface-container-lowest rounded-xl ambient-shadow p-6 flex flex-col justify-between group cursor-pointer border border-transparent hover:border-primary-container/20 transition-all">
+<div>
+<span class="inline-flex items-center px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm mb-3">Developer</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2 group-hover:text-primary-container transition-colors">Integrating the new GraphQL API</h3>
+</div>
+<div class="flex items-center text-primary-container font-label-sm text-label-sm mt-4">
+                            View documentation <span class="material-symbols-outlined text-[18px] ml-1">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Two Column Layout: Main Grid & Sidebar -->
+<section class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: Articles Grid -->
+<div class="lg:col-span-8">
+<div class="flex items-center justify-between mb-8 border-b border-surface-container-high pb-4">
+<h2 class="font-headline-lg text-headline-lg text-on-background">Latest Resources</h2>
+<!-- Filters (Visual only) -->
+<div class="hidden sm:flex space-x-2">
+<button class="px-4 py-2 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm">All</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm transition-colors">Developer</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm transition-colors">Strategy</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm transition-colors">Case Study</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Article Card 1 -->
+<article class="bg-surface-container-lowest rounded-xl ambient-shadow overflow-hidden group border border-transparent hover:border-surface-container-high transition-all flex flex-col">
+<div class="h-48 overflow-hidden">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="close up of fiber optic cables glowing brightly in a dark server room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1YBhHENs96ua2LCPVMSVn-KYi0k1XzBtgVk32qngTB5EqwT_KcZF3D7XmVotHhIiFSa9d0i6YUzgkEf3gr6fhesJehNEMGS09ydbJB4UAaJc4xbpv4HGvYefpJML9hqlw8qx_A0h-aS08YHsZJ_Qs6U7vt5agwBUtht7515bGKHbQJeTYx4kuXmwju3iPC6Z4E9XV37hWpX_xYew4fU7l01APRyKX7f_iOXpwK8roKHJlsqsLAEXRmIk8Jp7JezaTilGAc01WDQna"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm text-secondary">Developer</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 24, 2023</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3 group-hover:text-primary-container transition-colors line-clamp-2">Optimizing WebSocket connections for real-time scale</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 line-clamp-3">Deep dive into managing state and connections when dealing with millions of concurrent users on our edge network.</p>
+<div class="mt-auto">
+<a class="inline-flex items-center text-primary-container font-label-sm text-label-sm hover:underline underline-offset-4" href="#">Read Article</a>
+</div>
+</div>
+</article>
+<!-- Article Card 2 -->
+<article class="bg-surface-container-lowest rounded-xl ambient-shadow overflow-hidden group border border-transparent hover:border-surface-container-high transition-all flex flex-col">
+<div class="h-48 overflow-hidden">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="corporate executives reviewing charts on a digital tablet in a modern sunlit boardroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLB6JQyGGituQ__OBK2xltKcLmI-8uvo6T9oqbYf104ZMYU5ePOK3snWSYx5x6W_nGW0girx4y8FVyXw0iY-_leHbmLAmcizOrx7D4lzH_VSj75okEOl3EUsICPMizFFPHqjFvwsupFdk-eNO32lVBGYfspWsvoQiXUd921mBRKR0t9T9QmqdsE6utcJ0PJFf9nCZ8Mx50SqT0sFzxtCVUv9bGdWKaOGnYsCoYCbj2QvO6wON2VN6fUrQyhimnaadfjyvKt-ThQuv0"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm text-tertiary">Strategy</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 18, 2023</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3 group-hover:text-primary-container transition-colors line-clamp-2">The ROI of migrating to a unified communication platform</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 line-clamp-3">A comprehensive analysis of cost savings and productivity gains achieved by consolidating disparate tools.</p>
+<div class="mt-auto">
+<a class="inline-flex items-center text-primary-container font-label-sm text-label-sm hover:underline underline-offset-4" href="#">Read Article</a>
+</div>
+</div>
+</article>
+<!-- Article Card 3 -->
+<article class="bg-surface-container-lowest rounded-xl ambient-shadow overflow-hidden group border border-transparent hover:border-surface-container-high transition-all flex flex-col">
+<div class="h-48 overflow-hidden bg-surface-container flex items-center justify-center relative">
+<!-- Example of a graphic style card instead of photo -->
+<div class="absolute inset-0 bg-gradient-to-br from-primary-container to-tertiary-container opacity-10"></div>
+<span class="material-symbols-outlined text-[64px] text-primary-container/80" data-weight="fill">domain</span>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm text-primary-container">Case Study</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 12, 2023</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3 group-hover:text-primary-container transition-colors line-clamp-2">Securing communications for healthcare provider HealthNet</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 line-clamp-3">How ISO 27001 certified infrastructure enabled secure telemedicine across 50 regional clinics.</p>
+<div class="mt-auto">
+<a class="inline-flex items-center text-primary-container font-label-sm text-label-sm hover:underline underline-offset-4" href="#">Read Case Study</a>
+</div>
+</div>
+</article>
+<!-- Article Card 4 -->
+<article class="bg-surface-container-lowest rounded-xl ambient-shadow overflow-hidden group border border-transparent hover:border-surface-container-high transition-all flex flex-col">
+<div class="h-48 overflow-hidden">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="laptop computer screen showing lines of code on a dark wooden desk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd0kqLB-Z-trWRVKvsa3hY-V_N3Lyh68RyS9-U_7o2FsKYCPEf9jLVNTcEmjk9fcjOd5zvO_-oE9p_cgaLRNnV-nPly30VXssJe32q0tkDLcCJkPJQoGQH-e9ouujiFtoMv9YLmuFcFFmeRzw8Qpq_u9bDDDFAolJPt1hPk4w57Fwxjtqj3Plp1odyg83JuT6HJvMoKEihlv9MrLqszaw2N6sFGkykCVwMdVv8qRwvXmUNuEiuKFbdRFjmJTtNQszRaaYsFe6g7tZN"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm text-secondary">Developer</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 05, 2023</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3 group-hover:text-primary-container transition-colors line-clamp-2">Implementing E2E encryption with our SDK</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 line-clamp-3">Step-by-step guide to ensuring complete message privacy from client device to client device.</p>
+<div class="mt-auto">
+<a class="inline-flex items-center text-primary-container font-label-sm text-label-sm hover:underline underline-offset-4" href="#">Read Article</a>
+</div>
+</div>
+</article>
+</div>
+<div class="mt-8 flex justify-center">
+<button class="px-6 py-3 rounded-full border border-outline text-on-background font-label-sm text-label-sm hover:bg-surface-container transition-colors">Load More Resources</button>
+</div>
+</div>
+<!-- Right Column: Sidebar (Trending Topics & Newsletter) -->
+<aside class="lg:col-span-4 space-y-8">
+<!-- Trending Widget -->
+<div class="bg-surface-container-lowest rounded-xl ambient-shadow p-6">
+<h3 class="font-headline-md text-headline-md text-on-background mb-6 flex items-center">
+<span class="material-symbols-outlined mr-2 text-primary-container">trending_up</span>
+                        Trending Topics
+                    </h3>
+<ul class="space-y-5">
+<li class="group cursor-pointer">
+<div class="flex space-x-4">
+<div class="font-display-xl text-3xl text-surface-dim font-bold mt-1">01</div>
+<div>
+<h4 class="font-body-lg text-body-lg text-on-background font-semibold group-hover:text-primary-container transition-colors leading-tight">Zero-Trust Architecture Basics</h4>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm mt-1 block">5 min read</span>
+</div>
+</div>
+</li>
+<li class="group cursor-pointer">
+<div class="flex space-x-4">
+<div class="font-display-xl text-3xl text-surface-dim font-bold mt-1">02</div>
+<div>
+<h4 class="font-body-lg text-body-lg text-on-background font-semibold group-hover:text-primary-container transition-colors leading-tight">Preparing for ISO 27001 Certification</h4>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm mt-1 block">12 min read</span>
+</div>
+</div>
+</li>
+<li class="group cursor-pointer">
+<div class="flex space-x-4">
+<div class="font-display-xl text-3xl text-surface-dim font-bold mt-1">03</div>
+<div>
+<h4 class="font-body-lg text-body-lg text-on-background font-semibold group-hover:text-primary-container transition-colors leading-tight">GlobalConnect API v2.0 Release Notes</h4>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm mt-1 block">3 min read</span>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<!-- Newsletter Callout (Sidebar version) -->
+<div class="bg-surface-container rounded-xl p-6 border border-surface-container-high">
+<div class="mb-4 text-primary-container">
+<span class="material-symbols-outlined text-3xl">mail</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Weekly Insights</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Get the latest technical guides and strategy reports delivered to your inbox.</p>
+<form class="space-y-3">
+<input class="w-full bg-surface-container-lowest border border-outline rounded-lg px-4 py-3 font-body-md text-body-md text-on-background focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-shadow" placeholder="Work email address" required="" type="email"/>
+<button class="w-full bg-primary-container text-white font-label-sm text-label-sm px-4 py-3 rounded-lg hover:bg-[#5e0010] transition-colors" type="submit">Subscribe</button>
+</form>
+<p class="font-body-md text-xs text-on-surface-variant mt-3 text-center">Unsubscribe at any time.</p>
+</div>
+</aside>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 w-full py-12 border-t mt-auto border-slate-200 dark:border-slate-800 flat no shadows">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="col-span-2 md:col-span-1 flex flex-col space-y-4">
+<span class="text-xl font-bold text-slate-900 dark:text-white">GlobalConnect</span>
+<p class="font-manrope text-sm text-slate-500 dark:text-slate-400">© 2024 GlobalConnect Enterprise. All rights reserved. ISO 27001 Certified.</p>
+</div>
+<!-- Assuming distributing links across columns based on layout constraints -->
+<div class="flex flex-col space-y-3">
+<h4 class="font-manrope font-bold text-sm text-slate-900 dark:text-white mb-2">Legal</h4>
+<a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-[#88001B] transition-colors hover:underline decoration-[#88001B] underline-offset-4 Smooth scroll to top and link transitions" href="#">Privacy Policy</a>
+<a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-[#88001B] transition-colors hover:underline decoration-[#88001B] underline-offset-4 Smooth scroll to top and link transitions" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col space-y-3">
+<h4 class="font-manrope font-bold text-sm text-slate-900 dark:text-white mb-2">Platform</h4>
+<a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-[#88001B] transition-colors hover:underline decoration-[#88001B] underline-offset-4 Smooth scroll to top and link transitions" href="#">Security</a>
+<a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-[#88001B] transition-colors hover:underline decoration-[#88001B] underline-offset-4 Smooth scroll to top and link transitions" href="#">Status</a>
+<a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-[#88001B] transition-colors hover:underline decoration-[#88001B] underline-offset-4 Smooth scroll to top and link transitions" href="#">Global Infrastructure</a>
+</div>
+<div class="flex flex-col space-y-3">
+<h4 class="font-manrope font-bold text-sm text-slate-900 dark:text-white mb-2">Company</h4>
+<a class="font-manrope text-sm text-[#88001B] font-medium hover:underline decoration-[#88001B] underline-offset-4 Smooth scroll to top and link transitions" href="#">Resources</a> <!-- Example of Active state in Footer if applicable, otherwise inactive -->
+<a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-[#88001B] transition-colors hover:underline decoration-[#88001B] underline-offset-4 Smooth scroll to top and link transitions" href="#">Sitemap</a>
+</div>
+</div>
+</footer>
+</body></html>

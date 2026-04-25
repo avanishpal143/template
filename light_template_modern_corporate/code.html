@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>24x7 Econnect - Multi-Channel Communication</title>
+<!-- Google Fonts: Manrope & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#d3daef",
+                        "surface-variant": "#dce2f7",
+                        "on-secondary-fixed": "#00174b",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#88001b",
+                        "surface-container-high": "#e1e8fd",
+                        "surface": "#f9f9ff",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#d2bbff",
+                        "primary": "#5e0010",
+                        "on-tertiary-fixed": "#25005a",
+                        "secondary-fixed-dim": "#b4c5ff",
+                        "tertiary": "#380081",
+                        "surface-container-highest": "#dce2f7",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#5a00c6",
+                        "primary-fixed-dim": "#ffb3b1",
+                        "on-primary-container": "#ff8c8c",
+                        "inverse-surface": "#293040",
+                        "inverse-on-surface": "#edf0ff",
+                        "surface-container-low": "#f1f3ff",
+                        "outline-variant": "#e1bebd",
+                        "on-secondary-fixed-variant": "#003ea8",
+                        "secondary": "#0051d5",
+                        "on-surface-variant": "#594140",
+                        "tertiary-fixed": "#eaddff",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#ffdad8",
+                        "secondary-fixed": "#dbe1ff",
+                        "surface-bright": "#f9f9ff",
+                        "error": "#ba1a1a",
+                        "surface-container": "#e9edff",
+                        "surface-tint": "#b22834",
+                        "on-tertiary-container": "#bd9cff",
+                        "inverse-primary": "#ffb3b1",
+                        "outline": "#8d706f",
+                        "tertiary-container": "#5300b8",
+                        "on-primary-fixed-variant": "#900920",
+                        "on-secondary-container": "#fefcff",
+                        "on-error-container": "#93000a",
+                        "background": "#f9f9ff",
+                        "secondary-container": "#316bf3",
+                        "on-primary-fixed": "#410008",
+                        "on-background": "#141b2b",
+                        "on-surface": "#141b2b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-padding": "5rem",
+                        "container-max": "1280px",
+                        "stack-md": "1.5rem",
+                        "gutter": "1.5rem",
+                        "stack-lg": "3rem",
+                        "stack-sm": "0.5rem"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Manrope"],
+                        "display-xl": ["Manrope"],
+                        "headline-lg": ["Manrope"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "700" }],
+                        "display-xl": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "label-sm": ["14px", { "lineHeight": "1", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar Shared Component -->
+<header class="bg-white/90 dark:bg-slate-950/90 backdrop-blur-md docked full-width top-0 sticky border-b border-slate-100 dark:border-slate-800 shadow-sm z-50">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto font-manrope antialiased">
+<!-- Brand -->
+<div class="flex items-center gap-2">
+<span class="text-xl font-black tracking-tight text-red-900 dark:text-red-500">Econnect</span>
+</div>
+<!-- Navigation Links (Web) -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-900 dark:hover:text-red-500 transition-colors" href="#">Solutions</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-900 dark:hover:text-red-500 transition-colors" href="#">Pricing</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-900 dark:hover:text-red-500 transition-colors" href="#">About Us</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-900 dark:hover:text-red-500 transition-colors" href="#">Resources</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-900 dark:hover:text-red-500 transition-colors" href="#">FAQs</a>
+</nav>
+<!-- Actions -->
+<div class="flex items-center gap-4">
+<a class="hidden md:block text-slate-600 dark:text-slate-400 font-medium hover:text-red-900 dark:hover:text-red-500 transition-colors" href="#">Login</a>
+<button class="bg-primary text-on-primary font-label-sm text-label-sm px-6 py-2.5 rounded-full hover:opacity-90 transition-opacity flex items-center gap-2">
+                    Get Started
+                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative pt-24 pb-section-padding px-gutter overflow-hidden bg-surface">
+<div class="absolute inset-0 bg-gradient-to-br from-surface-variant/30 to-surface/0 -z-10"></div>
+<div class="max-w-container-max mx-auto grid lg:grid-cols-2 gap-stack-lg items-center">
+<div class="flex flex-col gap-stack-md z-10">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider bg-primary-fixed-dim/20 w-fit px-3 py-1 rounded-full">Enterprise Communication</span>
+<h1 class="font-display-xl text-display-xl text-on-background">
+                        Connect &amp; Engage Customers with <span class="text-primary">Multi-Channel</span> Communication
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                        Empower your business with global reach, ISO-certified security, and seamless integration. Deliver the right message, on the right channel, at the perfect time.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary text-on-primary font-label-sm text-label-sm px-8 py-3.5 rounded-full hover:shadow-lg transition-all flex items-center gap-2">
+                            Explore Solutions
+                            <span class="material-symbols-outlined text-[20px]" data-weight="fill" style="font-variation-settings: 'FILL' 1;">arrow_right_alt</span>
+</button>
+<button class="bg-transparent border border-outline text-on-surface font-label-sm text-label-sm px-8 py-3.5 rounded-full hover:bg-surface-variant transition-colors">
+                            Talk to Sales
+                        </button>
+</div>
+</div>
+<div class="relative z-10 rounded-xl overflow-hidden shadow-2xl bg-surface-container-lowest border border-surface-variant">
+<div class="aspect-[4/3] bg-gradient-to-tr from-surface-dim to-surface-container-high relative flex items-center justify-center">
+<img alt="Dashboard UI" class="w-full h-full object-cover opacity-90" data-alt="high-tech corporate communication dashboard interface with data visualization and messaging channels on a modern screen with soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEYv18fQwu5kV20rIAluH8HuvjeXCl8l-RtPJsaF9Xoie9zzM9sA8nxbm6hRh6mTOFHO7XD-9BKniwF18glT31VeaQS8T6hAVtUnWYqD5wJ5Ahwl1GxMTmNn2NmqvNCgFnIYESY0NVL8bsJ2n9YzlkWzVDQfqyno0gJMKLbOgWMgOu0zA9o1oCz1QfkCyS_K-RtsXJGDvKpwtpPzAt7wseQmuMwQbBWs2xM3_Vn3tuOU7aDCSd-qyLbgHLv9bsGYJ9y-1wyPlDGsLD"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Cards Section (Bento Grid) -->
+<section class="py-section-padding px-gutter bg-surface-container-low">
+<div class="max-w-container-max mx-auto flex flex-col gap-stack-lg">
+<div class="text-center max-w-2xl mx-auto flex flex-col gap-stack-sm">
+<h2 class="font-headline-lg text-headline-lg text-on-background">Comprehensive Connectivity</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Unify your messaging strategy with our robust suite of enterprise-grade channels.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- WhatsApp -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-surface-variant hover:border-primary transition-colors group flex flex-col gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]" data-icon="forum">forum</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background">WhatsApp Business</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Engage globally with rich media, automated templates, and conversational commerce features.</p>
+</div>
+<!-- SMS -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-surface-variant hover:border-primary transition-colors group flex flex-col gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]" data-icon="sms">sms</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background">Enterprise SMS</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">High-throughput, ultra-reliable transactional and promotional text messaging with global routing.</p>
+</div>
+<!-- RCS -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-surface-variant hover:border-primary transition-colors group flex flex-col gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface flex items-center justify-center text-tertiary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]" data-icon="chat_bubble">chat_bubble</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background">RCS Messaging</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Next-generation native messaging with verified senders, high-res images, and interactive buttons.</p>
+</div>
+<!-- Voice -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-surface-variant hover:border-primary transition-colors group flex flex-col gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]" data-icon="call">call</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background">Voice Solutions</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Automated IVR, bulk voice broadcasting, and seamless SIP trunking for enterprise voice communication.</p>
+</div>
+<!-- Email -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-surface-variant hover:border-primary transition-colors group flex flex-col gap-4 lg:col-span-2">
+<div class="w-12 h-12 rounded-lg bg-surface flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]" data-icon="mail">mail</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background">Transactional Email</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Ensure critical communications reach the inbox. High deliverability infrastructure for receipts, alerts, and detailed reports.</p>
+</div>
+<!-- DLT -->
+<div class="bg-primary text-on-primary p-8 rounded-xl shadow-sm flex flex-col gap-4 lg:col-span-3 items-center justify-center text-center relative overflow-hidden">
+<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-50"></div>
+<div class="z-10 flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-[32px] text-primary-fixed" data-icon="shield">shield</span>
+<h3 class="font-headline-md text-headline-md text-on-primary">DLT Compliance Management</h3>
+<p class="font-body-md text-body-md text-primary-fixed max-w-2xl">End-to-end support for Distributed Ledger Technology registration and template scrubbing to ensure absolute regulatory compliance for Indian traffic.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="py-section-padding px-gutter bg-surface">
+<div class="max-w-container-max mx-auto flex flex-col gap-stack-lg">
+<div class="text-center flex flex-col gap-stack-sm">
+<h2 class="font-headline-lg text-headline-lg text-on-background">Transparent Pricing Plans</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Scalable solutions tailored to your communication volume.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-5xl mx-auto w-full">
+<!-- Starter -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-sm border border-surface-variant flex flex-col gap-6">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background">Starter</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">For growing businesses.</p>
+</div>
+<div class="text-display-xl font-display-xl text-on-background">$99<span class="text-body-md font-body-md text-on-surface-variant">/mo</span></div>
+<ul class="flex flex-col gap-3 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[20px] text-primary" data-icon="check_circle">check_circle</span> 10,000 Messages</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[20px] text-primary" data-icon="check_circle">check_circle</span> 2 Channels</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[20px] text-primary" data-icon="check_circle">check_circle</span> Standard Support</li>
+</ul>
+<button class="w-full mt-auto bg-transparent border border-outline text-on-surface font-label-sm text-label-sm py-3 rounded-full hover:bg-surface-variant transition-colors">Select Starter</button>
+</div>
+<!-- Professional (Highlighted) -->
+<div class="bg-inverse-surface rounded-xl p-8 shadow-lg border border-primary relative flex flex-col gap-6 transform md:-translate-y-4">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary text-on-primary font-label-sm text-[12px] px-4 py-1 rounded-full uppercase tracking-wider">Most Popular</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-inverse-on-surface">Professional</h3>
+<p class="font-body-md text-body-md text-inverse-on-surface/80 mt-2">For high-volume communication.</p>
+</div>
+<div class="text-display-xl font-display-xl text-inverse-on-surface">$299<span class="text-body-md font-body-md text-inverse-on-surface/80">/mo</span></div>
+<ul class="flex flex-col gap-3 font-body-md text-body-md text-inverse-on-surface/90">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[20px] text-primary-fixed" data-icon="check_circle">check_circle</span> 50,000 Messages</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[20px] text-primary-fixed" data-icon="check_circle">check_circle</span> All Channels</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[20px] text-primary-fixed" data-icon="check_circle">check_circle</span> Priority Support</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[20px] text-primary-fixed" data-icon="check_circle">check_circle</span> API Access</li>
+</ul>
+<button class="w-full mt-auto bg-primary text-on-primary font-label-sm text-label-sm py-3 rounded-full hover:bg-primary/90 transition-colors">Select Professional</button>
+</div>
+<!-- Enterprise -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-sm border border-surface-variant flex flex-col gap-6">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background">Enterprise</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Custom solutions for scale.</p>
+</div>
+<div class="text-headline-lg font-headline-lg text-on-background">Custom</div>
+<ul class="flex flex-col gap-3 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[20px] text-primary" data-icon="check_circle">check_circle</span> Unlimited Volume</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[20px] text-primary" data-icon="check_circle">check_circle</span> Dedicated Account Manager</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[20px] text-primary" data-icon="check_circle">check_circle</span> Custom SLA</li>
+</ul>
+<button class="w-full mt-auto bg-transparent border border-outline text-on-surface font-label-sm text-label-sm py-3 rounded-full hover:bg-surface-variant transition-colors">Contact Sales</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shared Component -->
+<footer class="bg-slate-50 dark:bg-slate-900 w-full rounded-none border-t border-slate-200 dark:border-slate-800 flat no shadows text-red-900 dark:text-red-500 font-manrope text-sm">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 max-w-7xl mx-auto gap-6">
+<!-- Brand -->
+<div class="text-lg font-bold text-red-900 dark:text-red-500">
+                Econnect
+            </div>
+<!-- Links -->
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-slate-500 dark:text-slate-400 hover:text-red-900 dark:hover:text-red-500 hover:underline transition-all" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-red-900 dark:hover:text-red-500 hover:underline transition-all" href="#">Terms of Service</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-red-900 dark:hover:text-red-500 hover:underline transition-all" href="#">API Docs</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-red-900 dark:hover:text-red-500 hover:underline transition-all" href="#">Support</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-red-900 dark:hover:text-red-500 hover:underline transition-all" href="#">Contact</a>
+</div>
+<!-- Copyright -->
+<div class="text-slate-500 dark:text-slate-400 text-sm">
+                © 2024 Econnect Communication Services. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>

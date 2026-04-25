@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>24x7 Econnect - Sleek Professional Dark Mode</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-dim": "#d3daef",
+                        "surface-variant": "#dce2f7",
+                        "on-secondary-fixed": "#00174b",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#88001b",
+                        "surface-container-high": "#e1e8fd",
+                        "surface": "#f9f9ff",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#d2bbff",
+                        "primary": "#5e0010",
+                        "on-tertiary-fixed": "#25005a",
+                        "secondary-fixed-dim": "#b4c5ff",
+                        "tertiary": "#380081",
+                        "surface-container-highest": "#dce2f7",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#5a00c6",
+                        "primary-fixed-dim": "#ffb3b1",
+                        "on-primary-container": "#ff8c8c",
+                        "inverse-surface": "#293040",
+                        "inverse-on-surface": "#edf0ff",
+                        "surface-container-low": "#f1f3ff",
+                        "outline-variant": "#e1bebd",
+                        "on-secondary-fixed-variant": "#003ea8",
+                        "secondary": "#0051d5",
+                        "on-surface-variant": "#594140",
+                        "tertiary-fixed": "#eaddff",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#ffdad8",
+                        "secondary-fixed": "#dbe1ff",
+                        "surface-bright": "#f9f9ff",
+                        "error": "#ba1a1a",
+                        "surface-container": "#e9edff",
+                        "surface-tint": "#b22834",
+                        "on-tertiary-container": "#bd9cff",
+                        "inverse-primary": "#ffb3b1",
+                        "outline": "#8d706f",
+                        "tertiary-container": "#5300b8",
+                        "on-primary-fixed-variant": "#900920",
+                        "on-secondary-container": "#fefcff",
+                        "on-error-container": "#93000a",
+                        "background": "#f9f9ff",
+                        "secondary-container": "#316bf3",
+                        "on-primary-fixed": "#410008",
+                        "on-background": "#141b2b",
+                        "on-surface": "#141b2b"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "section-padding": "5rem",
+                        "container-max": "1280px",
+                        "stack-md": "1.5rem",
+                        "gutter": "1.5rem",
+                        "stack-lg": "3rem",
+                        "stack-sm": "0.5rem"
+                    },
+                    fontFamily: {
+                        "headline-md": ["Manrope"],
+                        "display-xl": ["Manrope"],
+                        "headline-lg": ["Manrope"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-sm": ["Inter"]
+                    },
+                    fontSize: {
+                        "headline-md": ["24px", { lineHeight: "1.4", fontWeight: "700" }],
+                        "display-xl": ["48px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "800" }],
+                        "headline-lg": ["32px", { lineHeight: "1.3", fontWeight: "700" }],
+                        "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "body-md": ["16px", { lineHeight: "1.5", fontWeight: "400" }],
+                        "label-sm": ["14px", { lineHeight: "1", fontWeight: "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #0f172a; color: #f8fafc; } /* Deep Navy/Charcoal override for dark mode requested by user */
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-white/90 dark:bg-slate-950/90 backdrop-blur-md docked full-width top-0 sticky border-b border-slate-100 dark:border-slate-800 shadow-sm z-50">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-black tracking-tight text-red-900 dark:text-red-500 font-manrope antialiased">Econnect</div>
+<div class="hidden md:flex space-x-8">
+<a class="text-red-900 dark:text-red-500 font-bold border-b-2 border-red-900 dark:border-red-500 pb-1 hover:bg-slate-50 dark:hover:bg-slate-900 transition-all font-label-sm text-label-sm" href="#">Solutions</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-900 dark:hover:text-red-500 transition-colors hover:bg-slate-50 dark:hover:bg-slate-900 transition-all font-label-sm text-label-sm" href="#">Pricing</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-900 dark:hover:text-red-500 transition-colors hover:bg-slate-50 dark:hover:bg-slate-900 transition-all font-label-sm text-label-sm" href="#">About Us</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-900 dark:hover:text-red-500 transition-colors hover:bg-slate-50 dark:hover:bg-slate-900 transition-all font-label-sm text-label-sm" href="#">Resources</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-900 dark:hover:text-red-500 transition-colors hover:bg-slate-50 dark:hover:bg-slate-900 transition-all font-label-sm text-label-sm" href="#">FAQs</a>
+</div>
+<div class="flex items-center space-x-4">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-900 dark:hover:text-red-500 transition-colors font-label-sm text-label-sm" href="#">Login</a>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-sm text-label-sm hover:opacity-90 transition-opacity flex items-center gap-2">
+                    Get Started <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="py-section-padding px-gutter max-w-container-max mx-auto relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-slate-900 to-slate-950 -z-10"></div>
+<div class="grid lg:grid-cols-2 gap-stack-lg items-center">
+<div class="space-y-stack-md">
+<h1 class="font-display-xl text-display-xl text-white">
+                        Enterprise Communication, <span class="text-red-500">Uninterrupted.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-slate-300">
+                        Deliver seamless global connectivity with our multi-channel API platform. Built for scale, designed for reliability, ensuring your messages always reach their destination.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-label-sm text-label-sm hover:opacity-90 transition-opacity flex items-center gap-2 shadow-lg shadow-red-900/20">
+                            Start Building Now <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<button class="px-8 py-3 rounded-full font-label-sm text-label-sm text-slate-300 border border-slate-700 hover:bg-slate-800 transition-colors">
+                            Contact Sales
+                        </button>
+</div>
+</div>
+<div class="relative h-[500px] w-full rounded-xl overflow-hidden border border-slate-800 shadow-2xl">
+<img alt="Data visualization dashboard showing global network connections in dark mode with glowing red and blue nodes" class="absolute inset-0 w-full h-full object-cover opacity-80" data-alt="Data visualization dashboard showing global network connections in dark mode with glowing red and blue nodes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAG9BoAB4q4nZiB-Bof5X6kEOe8tBtt1EEhpS_n8iPR1L6O1uKwDlKeOfm0XHpEkmtTq8umvMN4cNgvbJZum0yLyo5acflPw5FQA5SqtIChPGO39MostiyHikofDcK-WdP2RVwlKvtcX8ImnM7ZOX4BTOW09ilsEem8BSP_tXHIw8z8Cu93LWo-vuriXzKIKFqvRLwFVy4mGwLvy7qJnOdVONe_5YHbJDF5tkdbrNTfVz1QPIylS9QmF3I8_BQSOsMWyUKknalAWU9"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-900 w-full rounded-none border-t border-slate-200 dark:border-slate-800 mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 max-w-7xl mx-auto gap-6">
+<div class="text-lg font-bold text-red-900 dark:text-red-500 font-headline-md text-headline-md">Econnect</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-slate-500 dark:text-slate-400 hover:text-red-900 dark:hover:text-red-500 hover:underline transition-all font-body-md text-body-md" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-red-900 dark:hover:text-red-500 hover:underline transition-all font-body-md text-body-md" href="#">Terms of Service</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-red-900 dark:hover:text-red-500 hover:underline transition-all font-body-md text-body-md" href="#">API Docs</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-red-900 dark:hover:text-red-500 hover:underline transition-all font-body-md text-body-md" href="#">Support</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-red-900 dark:hover:text-red-500 hover:underline transition-all font-body-md text-body-md" href="#">Contact</a>
+</div>
+<div class="text-slate-500 dark:text-slate-400 font-body-sm text-sm">
+                    © 2024 Econnect Communication Services. All rights reserved.
+                </div>
+</div>
+</footer>
+</main>
+</body></html>
